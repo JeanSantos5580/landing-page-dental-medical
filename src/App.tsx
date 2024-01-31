@@ -1,7 +1,16 @@
+import { ThemeProvider } from 'styled-components'
+import { themes } from './styles/theme'
+import { GlobalStyle } from './styles/globals'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
+
 export function App() {
   return (
-    <div>
-      <h1>Home uifry</h1>
-    </div>
+    <ThemeProvider theme={themes.dark}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+      <GlobalStyle />
+    </ThemeProvider>
   )
 }
