@@ -7,6 +7,7 @@ import { ImplantIcon } from '../../icons/implant'
 import { ContactForm } from '../../components/ContactForm'
 import { BannerBestProducts } from '../../components/BannerBestProducts'
 import { BannerAdvantages } from '../../components/BannerAdvantages'
+import { VideoDemonstration } from '../../components/VideoDemonstration'
 
 export function Home() {
   return (
@@ -32,6 +33,7 @@ export function Home() {
       <ContactForm />
       <BannerAdvantages />
       <BannerBestProducts />
+      <VideoDemonstration />
     </div>
   )
 }
