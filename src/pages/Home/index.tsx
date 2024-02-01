@@ -4,6 +4,7 @@ import { ServiceCard } from '../../components/ServiceCard'
 import { Services } from './styles'
 import { LipsIcon } from '../../icons/lips'
 import { ImplantIcon } from '../../icons/implant'
+import { ContactForm } from '../../components/ContactForm'
 
 export function Home() {
   return (
@@ -26,6 +27,7 @@ export function Home() {
           description="A dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or bridge."
         />
       </Services>
+      <ContactForm />
     </div>
   )
 }
