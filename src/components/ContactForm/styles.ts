@@ -9,28 +9,50 @@ export const Main = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
+`
+export const Form = styled.div`
+  display: flex;
 
-  h2 {
+  button {
+    padding: 15px 30px;
+
+    background: ${({ theme }) => theme.colors.mid_blue};
+    color: ${({ theme }) => theme.colors.white};
+
+    border: none;
+    border-radius: 0 10px 10px 0;
+
     font-family: 'General Sans', sans-serif;
-    font-size: 42px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 125%;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    color: ${({ theme }) => theme.colors.dark_blue};
-  }
-
-  small {
-    font-family: 'General Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
     line-height: 155%;
-    letter-spacing: 0.27px;
-    margin-bottom: 40px;
-    color: ${({ theme }) => theme.colors.body_text};
+    white-space: nowrap;
+
+    cursor: pointer;
   }
 `
-export const Form = styled.div``
+export const Input = styled.div`
+  display: flex;
+  flex: 1;
+  gap: 12px;
+  padding: 16px 22px;
+  border: 1px solid ${({ theme }) => theme.colors.gray_200};
+  border-radius: 10px 0 0 10px;
+
+  input {
+    flex: 1;
+    border: none;
+    color: ${({ theme }) => theme.colors.gray_200};
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors.gray_200};
+    }
+  }
+
+  svg {
+    color: ${({ theme }) => theme.colors.gray_200};
+  }
+`
 
 export const ImageContact = styled.div`
   position: relative;

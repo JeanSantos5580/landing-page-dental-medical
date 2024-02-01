@@ -1,37 +1,33 @@
 import {
+  BannerImage,
   ContactFormContainer,
-  Form,
-  ImageContact,
+  ContainerButton,
   ImageDuplicateBackground,
-  Input,
   Main,
 } from './styles'
-import image from '../../assets/imageContact.png'
-import { Phone } from '@phosphor-icons/react'
+import { Button } from '../Button'
+import image from '../../assets/imageProduct.png'
 import { MainTitle } from '../MainTitle'
 
-export function ContactForm() {
+export function BannerBestProducts() {
   return (
     <ContactFormContainer>
       <Main>
         <MainTitle
-          title="We’re welcoming new patients and can’t wait to meet you."
+          title="Leave your worries at the door and enjoy a healthier, more precise
+          smile"
           description="We use only the best quality materials on the market in order to
           provide the best products to our patients, So don’t worry about
           anything and book yourself."
         />
-        <Form>
-          <Input>
-            <Phone size={20} weight="light" />
-            <input type="text" placeholder="Enter your phone number" />
-          </Input>
-          <button>Submit</button>
-        </Form>
+        <ContainerButton>
+          <Button title="Book an appointment" />
+        </ContainerButton>
       </Main>
-      <ImageContact>
+      <BannerImage>
         <ImageDuplicateBackground />
         <img src={image} alt="" />
-      </ImageContact>
+      </BannerImage>
     </ContactFormContainer>
   )
 }

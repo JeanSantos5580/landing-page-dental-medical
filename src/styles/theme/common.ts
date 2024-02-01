@@ -8,6 +8,8 @@ export const commonStyles = {
     sky_blue: '#25b4f8',
     light_blue: '#e6f6fe',
 
+    gray_200: '#cfcfcf',
+
     body_text: '#3c4959',
 
     success: '#17bf28',
@@ -28,5 +30,5 @@ export const commonStyles = {
 
   borderRadius: {
     md: 10,
-  },
+  } as const,
 }

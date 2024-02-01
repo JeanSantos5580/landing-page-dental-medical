@@ -5,6 +5,8 @@ import { Services } from './styles'
 import { LipsIcon } from '../../icons/lips'
 import { ImplantIcon } from '../../icons/implant'
 import { ContactForm } from '../../components/ContactForm'
+import { BannerBestProducts } from '../../components/BannerBestProducts'
+import { BannerAdvantages } from '../../components/BannerAdvantages'
 
 export function Home() {
   return (
@@ -28,6 +30,8 @@ export function Home() {
         />
       </Services>
       <ContactForm />
+      <BannerAdvantages />
+      <BannerBestProducts />
     </div>
   )
 }
