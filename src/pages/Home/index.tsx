@@ -8,6 +8,7 @@ import { ContactForm } from '../../components/ContactForm'
 import { BannerBestProducts } from '../../components/BannerBestProducts'
 import { BannerAdvantages } from '../../components/BannerAdvantages'
 import { VideoDemonstration } from '../../components/VideoDemonstration'
+import { Specialists } from '../../components/Specialists'
 
 export function Home() {
   return (
@@ -34,6 +35,7 @@ export function Home() {
       <BannerAdvantages />
       <BannerBestProducts />
       <VideoDemonstration />
+      <Specialists />
     </div>
   )
 }
