@@ -13,7 +13,7 @@ export const commonStyles = {
     body_text: '#3c4959',
 
     success: '#17bf28',
-    waring: '#ec942c',
+    warning: '#ec942c',
     error: '#e52323',
   } as const,
 

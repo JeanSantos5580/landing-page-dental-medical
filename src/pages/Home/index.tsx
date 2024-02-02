@@ -9,6 +9,8 @@ import { BannerBestProducts } from '../../components/BannerBestProducts'
 import { BannerAdvantages } from '../../components/BannerAdvantages'
 import { VideoDemonstration } from '../../components/VideoDemonstration'
 import { Specialists } from '../../components/Specialists'
+import { Clients } from '../../components/Clients'
+import { News } from '../../components/News'
 
 export function Home() {
   return (
@@ -36,6 +38,8 @@ export function Home() {
       <BannerBestProducts />
       <VideoDemonstration />
       <Specialists />
+      <Clients />
+      <News />
     </div>
   )
 }

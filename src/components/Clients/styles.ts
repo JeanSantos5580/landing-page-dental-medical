@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 
-export const SpecialistsContainer = styled.div`
+export const ClientsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 60px 80px;
-  margin-top: 120px;
-  background: ${({ theme }) => theme.colors.light_blue};
+  margin-top: 100px;
 `
 export const Carousel = styled.div`
   display: flex;
@@ -29,9 +27,13 @@ export const Button = styled.div`
   justify-content: center;
   align-items: center;
   padding: 12px 26px;
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.dark_blue};
   border-radius: 4px;
   cursor: pointer;
 
   border: none;
+
+  svg {
+    color: ${({ theme }) => theme.colors.white};
+  }
 `
