@@ -13,7 +13,8 @@ export const Header = styled.div`
 `
 
 export const Cards = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;

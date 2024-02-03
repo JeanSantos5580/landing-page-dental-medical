@@ -11,6 +11,8 @@ import { VideoDemonstration } from '../../components/VideoDemonstration'
 import { Specialists } from '../../components/Specialists'
 import { Clients } from '../../components/Clients'
 import { News } from '../../components/News'
+import { Faq } from '../../components/Faq'
+import { BannerAd } from '../../components/BannerAd'
 
 export function Home() {
   return (
@@ -40,6 +42,8 @@ export function Home() {
       <Specialists />
       <Clients />
       <News />
+      <Faq />
+      <BannerAd />
     </div>
   )
 }
