@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
-export const ContactFormContainer = styled.div`
+export const BannerContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 121px;
+  padding: 45px 62px;
   background: ${({ theme }) => theme.colors.dark_blue};
+  border-radius: 10px;
 `
-export const Main = styled.div`
+export const BannerMain = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;

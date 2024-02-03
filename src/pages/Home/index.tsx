@@ -12,13 +12,14 @@ import { Specialists } from '../../components/Specialists'
 import { Clients } from '../../components/Clients'
 import { News } from '../../components/News'
 import { Faq } from '../../components/Faq'
-import { BannerAd } from '../../components/BannerAd'
+import { Footer } from '../../components/Footer'
+import { Banner } from '../../components/Banner'
 
 export function Home() {
   return (
     <div>
       <Hero />
-      <Services>
+     {/*  <Services>
         <ServiceCard
           icon={<Tooth size={42} weight="light" />}
           title="Root Canal Treatment"
@@ -34,16 +35,17 @@ export function Home() {
           title="Dental Implants"
           description="A dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or bridge."
         />
-      </Services>
+      </Services> */}
       <ContactForm />
       <BannerAdvantages />
-      <BannerBestProducts />
+      {/* <BannerBestProducts />
       <VideoDemonstration />
       <Specialists />
       <Clients />
       <News />
       <Faq />
-      <BannerAd />
+      <Banner />
+      <Footer /> */}
     </div>
   )
 }

@@ -39,15 +39,15 @@ body, input, textarea, button{
 }
 
 h1 {
-    font-size: 62px;
+    font-size: 3.875rem;
 }
 h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
 }
 h3 {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 `

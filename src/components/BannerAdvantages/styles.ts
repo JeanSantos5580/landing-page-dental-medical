@@ -5,18 +5,27 @@ export const BannerAdvantagesContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   padding: 55px 108px;
   margin-top: 120px;
   gap: 128px;
   background: ${({ theme }) => theme.colors.light_blue};
+
+  @media screen and (min-width: 400px) and (max-width: 1080px) {
+    flex-direction: column-reverse;
+    padding: 80px 20px;
+    gap: 52px;
+  }
 `
 
 export const BannerImage = styled.div`
-  width: 414px;
-  height: 444px;
-
+  width: 100%;
+  max-width: 414px;
+  overflow: hidden;
   img {
     width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
   }
 `
 

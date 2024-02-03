@@ -1,19 +1,19 @@
-import {
-  BannerImage,
-  ContactFormContainer,
-  ContainerButton,
-  Main,
-} from './styles'
-import image from '../../assets/ad.png'
 import { Button } from '../Button'
 import { MainTitle } from '../MainTitle'
+import {
+  BannerContainer,
+  BannerImage,
+  ContainerButton,
+  BannerMain,
+} from './styles'
+import image from '../../assets/ad.png'
 
-export function BannerAd() {
+export function Banner() {
   return (
-    <ContactFormContainer>
-      <Main>
+    <BannerContainer>
+      <BannerMain>
         <MainTitle
-          style={{ color: '#fff' }}
+          color="#fff"
           align="left"
           title="Dental Website that's gonna shake the game rules up."
           description="We use only the best quality materials on the market in order to provide the best products to our patients."
@@ -21,10 +21,10 @@ export function BannerAd() {
         <ContainerButton>
           <Button title="Learn More" />
         </ContainerButton>
-      </Main>
+      </BannerMain>
       <BannerImage>
         <img src={image} alt="" />
       </BannerImage>
-    </ContactFormContainer>
+    </BannerContainer>
   )
 }

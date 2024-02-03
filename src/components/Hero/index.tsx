@@ -1,11 +1,7 @@
 import { PhoneCall } from '@phosphor-icons/react'
-import { Button } from '../Button'
 import * as S from '../Hero/styles'
 import avatar from '../../assets/avatar02.png'
 import medic from '../../assets/medic.png'
-import externalEllipse from '../../assets/external-ellipse.png'
-import internalEllipse from '../../assets/internal-ellipse.png'
-import teeth from '../../assets/teeth.png'
 
 export function Hero() {
   return (
@@ -18,7 +14,7 @@ export function Hero() {
           anything and book yourself.
         </span>
         <S.Contact>
-          <Button title="Book an appointment" />
+          <S.Button />
           <S.PhoneNumber>
             <S.Icon>
               <PhoneCall size={24} weight="fill" color="#1376f8" />
@@ -48,9 +44,6 @@ export function Hero() {
       </S.Main>
       <S.HeroImage>
         <S.Image src={medic} alt="" />
-        <S.ExternalEllipse src={externalEllipse} alt="" />
-        <S.InternalEllipse src={internalEllipse} alt="" />
-        <S.Teeth src={teeth} />
       </S.HeroImage>
     </S.HeroContainer>
   )

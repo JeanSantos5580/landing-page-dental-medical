@@ -1,12 +1,5 @@
-import {
-  ContactFormContainer,
-  Form,
-  ImageContact,
-  ImageDuplicateBackground,
-  Input,
-  Main,
-} from './styles'
-import image from '../../assets/imageContact.png'
+import { ContactFormContainer, Form, ImageContact, Input, Main } from './styles'
+import image from '../../assets/imageContact01.png'
 import { Phone } from '@phosphor-icons/react'
 import { MainTitle } from '../MainTitle'
 
@@ -29,7 +22,6 @@ export function ContactForm() {
         </Form>
       </Main>
       <ImageContact>
-        <ImageDuplicateBackground />
         <img src={image} alt="" />
       </ImageContact>
     </ContactFormContainer>

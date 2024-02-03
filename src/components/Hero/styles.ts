@@ -4,6 +4,14 @@ import styled from 'styled-components'
 export const HeroContainer = styled.div`
   display: flex;
   margin-top: 60px;
+
+  @media screen and (max-width: 760px) and (max-width: 880px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
+    flex-direction: row;
+  }
 `
 
 export const Main = styled.div`
@@ -29,11 +37,64 @@ export const Main = styled.div`
     letter-spacing: 0.27px;
     margin-bottom: 40px;
   }
+
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    h1 {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
+    h1 {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
 `
 
 export const Contact = styled.div`
   display: flex;
   gap: 22px;
+`
+
+type ButtonContainerProps = {
+  title?: string
+}
+
+export const Button = styled.button<ButtonContainerProps>`
+  padding: 15px 30px;
+
+  background: ${({ theme }) => theme.colors.mid_blue};
+  color: ${({ theme }) => theme.colors.white};
+
+  border: none;
+  border-radius: ${({ theme }) => theme.borderRadius.md}px;
+
+  font-family: 'General Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 155%;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  &::before {
+    content: 'Book an appointment';
+    display: flex;
+
+    @media (max-width: 760px) {
+      content: 'Get started';
+    }
+  }
+
+  @media (max-width: 760px) {
+    font-size: 14px;
+  }
 `
 
 export const PhoneNumber = styled.div`
@@ -75,7 +136,8 @@ export const Phone = styled.div`
 `
 
 export const DoctorCard = styled.div`
-  width: 374px;
+  min-width: 320px;
+  max-width: 100%;
   padding: 14px 18px;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 8.333px 41.667px 0px rgba(0, 0, 0, 0.08);
@@ -133,36 +195,23 @@ export const IconLinkedIn = styled(IoLogoLinkedin).attrs(({ theme }) => ({
 }))`
   margin-left: auto;
 `
+
 export const HeroImage = styled.div`
   width: 50%;
+  height: 100vh;
   position: relative;
-  left: 0;
+  top: 0;
+  left: 50px;
+  align-self: center;
+
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    width: 100%;
+    margin-top: 54px;
+  }
 `
 export const Image = styled.img`
   width: 100%;
   position: absolute;
   left: -60px;
   z-index: 2;
-`
-
-export const ExternalEllipse = styled.img`
-  width: 590px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-`
-export const InternalEllipse = styled.img`
-  width: 470px;
-  position: absolute;
-  left: 60px;
-  top: 50px;
-  z-index: 1;
-`
-export const Teeth = styled.img`
-  width: 620px;
-  position: absolute;
-  left: -20px;
-  top: 0px;
-  z-index: 1;
 `
