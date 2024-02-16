@@ -1,5 +1,4 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { IoLogoLinkedin } from 'react-icons/io'
 import styled from 'styled-components'
 
 export const DoctorCardContainer = styled.div`

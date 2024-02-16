@@ -20,9 +20,9 @@ export function Header() {
 
   return (
     <HeaderContainer>
+      <Logo src={logo} />
       <FaBars onClick={handleShowSideBar} />
       {sidebar && <Sidebar active={setSideBar} />}
-      <Logo src={logo} />
       <Buttons>
         <MenuButton>Home</MenuButton>
         <MenuButton>Services</MenuButton>

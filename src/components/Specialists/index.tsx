@@ -39,13 +39,8 @@ export function Specialists() {
       />
 
       <Carousel>
-        {doctorCards.map((doctor) => (
-          <DoctorCard
-            key={doctor.name}
-            src={doctor.src}
-            name={doctor.name}
-            assignment={doctor.assignment}
-          />
+        {doctorCards.map((doctor, key) => (
+          <DoctorCard src={doctor.src} key={key} />
         ))}
       </Carousel>
     </S.SpecialistsContainer>

@@ -11,8 +11,8 @@ export const HeaderContainer = styled.div`
 
   > svg {
     display: none;
-    position: fixed;
-    right: 32px;
+    position: sticky;
+    right: 0px;
     color: ${({ theme }) => theme.colors.dark_blue};
     width: 30px;
     height: 30px;
