@@ -6,13 +6,12 @@ export const SpecialistsContainer = styled.div`
   padding: 60px 80px;
   margin-top: 120px;
   background: ${({ theme }) => theme.colors.light_blue};
+
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    padding: 24px 32px;
+  }
 `
-export const Carousel = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 40px;
-`
+
 export const Cards = styled.div`
   display: flex;
   gap: 20px;

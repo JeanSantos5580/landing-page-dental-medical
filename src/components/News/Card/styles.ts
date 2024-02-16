@@ -9,6 +9,7 @@ export const CardContainer = styled.div`
   border-radius: 10px;
 
   img {
+    min-width: 250px;
     width: 100%;
   }
 
@@ -16,7 +17,24 @@ export const CardContainer = styled.div`
     font-family: 'General Sans', sans-serif;
     line-height: 155%;
     letter-spacing: 0.27px;
-    font-size: 18px;
+  }
+
+  @media screen and (min-width: 660px) and (max-width: 880px) {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
+  }
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
   }
 `
 
@@ -37,7 +55,7 @@ export const Author = styled.small`
   margin-top: 4px;
 `
 
-export const Tag = styled.span`
+export const Tag = styled.small`
   width: fit-content;
   padding: 5px 13px;
   background: ${({ theme }) => theme.colors.dark_blue};
@@ -46,8 +64,14 @@ export const Tag = styled.span`
   margin-top: 22px;
 
   font-family: 'General Sans', sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 155%;
   letter-spacing: 0.27px;
+
+  @media screen and (min-width: 660px) and (max-width: 880px) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
+  }
 `

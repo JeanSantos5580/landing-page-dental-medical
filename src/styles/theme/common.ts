@@ -24,10 +24,6 @@ export const commonStyles = {
     xl: 18,
   } as const,
 
-  boxShadow: {
-    default: '#00000014',
-  } as const,
-
   borderRadius: {
     md: 10,
   } as const,

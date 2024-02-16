@@ -19,14 +19,14 @@ export const Card = styled.div`
     color: ${({ theme }) => theme.colors.dark_blue};
   }
 
-  small {
+  /* small {
     font-family: 'General Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 155%;
     letter-spacing: 0.27px;
     color: ${({ theme }) => theme.colors.body_text};
-  }
+  } */
 `
 export const Icon = styled.div`
   display: flex;
@@ -51,7 +51,6 @@ export const Button = styled.button`
   border: none;
 
   font-family: 'General Sans', sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 155%;
   letter-spacing: 0.24px;

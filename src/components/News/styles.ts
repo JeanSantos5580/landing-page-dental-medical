@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Button } from '../Button'
 
 export const NewsContainer = styled.div`
   display: flex;
@@ -23,4 +24,12 @@ export const ContainerButton = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
+`
+export const ViewAllButton = styled(Button)`
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
+  }
 `

@@ -8,4 +8,11 @@ export const LayoutContainer = styled.div`
   margin: auto;
   padding: 2.5rem;
   background: ${(props) => props.theme.colors.white};
+
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1080px) {
+  }
 `

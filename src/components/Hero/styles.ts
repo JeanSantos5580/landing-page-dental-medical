@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const HeroContainer = styled.div`
   display: flex;
   margin-top: 60px;
+  margin-bottom: 80px;
 
   @media screen and (max-width: 760px) and (max-width: 880px) {
     flex-direction: column;

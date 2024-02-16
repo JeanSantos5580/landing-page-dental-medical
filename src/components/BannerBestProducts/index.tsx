@@ -2,7 +2,6 @@ import {
   BannerImage,
   ContactFormContainer,
   ContainerButton,
-  ImageDuplicateBackground,
   Main,
 } from './styles'
 import { Button } from '../Button'
@@ -25,7 +24,6 @@ export function BannerBestProducts() {
         </ContainerButton>
       </Main>
       <BannerImage>
-        <ImageDuplicateBackground />
         <img src={image} alt="" />
       </BannerImage>
     </ContactFormContainer>

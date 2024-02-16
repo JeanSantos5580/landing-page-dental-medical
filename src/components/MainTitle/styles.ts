@@ -16,7 +16,6 @@ export const MainTitleContainer = styled.div<MainTitleContainerProps>`
 
   h2 {
     font-family: 'General Sans', sans-serif;
-    font-size: 42px;
     font-weight: 600;
     line-height: 125%;
     text-transform: capitalize;
@@ -27,7 +26,6 @@ export const MainTitleContainer = styled.div<MainTitleContainerProps>`
 
   small {
     font-family: 'General Sans', sans-serif;
-    font-size: 18px;
     font-weight: 400;
     line-height: 155%;
     letter-spacing: 0.27px;
