@@ -1,47 +1,58 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Button } from '../Button'
 
-export const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: ${({ theme }) => theme.colors.light_blue};
-  padding: 28px 42px;
-  border-radius: ${({ theme }) => theme.borderRadius.md}px;
-
-  > svg {
-    display: none;
-    position: fixed;
-    right: 32px;
-    color: ${({ theme }) => theme.colors.dark_blue};
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-
-    @media screen and (min-width: 400px) and (max-width: 880px) {
-      display: flex;
-    }
+const showSidebar = keyframes`
+  0% {
+    opacity: 0;
+    width: 0
   }
-
-  @media screen and (min-width: 400px) and (max-width: 880px) {
-    border-radius: 0;
+  100% {
+    opacity: 1;
+    width: 300px
   }
 `
+export const SidebarContainer = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 18.75rem;
+  background: ${({ theme }) => theme.colors.dark_blue};
+
+  animation: ${showSidebar} 0.2s ease-in-out;
+
+  > svg {
+    position: fixed;
+    color: ${({ theme }) => theme.colors.white};
+    width: 30px;
+    height: 30px;
+    margin-left: 24px;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+`
+
+export const Content = styled.div`
+  margin-top: 100px;
+`
+
 export const Logo = styled.img`
   width: 133px;
   height: 40px;
+  margin-right: 280px;
 
   @media screen and (min-width: 400px) and (max-width: 880px) {
     width: 80px;
     height: 25px;
-    margin-right: auto;
+  }
+
+  @media screen and (min-width: 880px) {
   }
 `
 export const Buttons = styled.div`
   display: flex;
   gap: 38px;
-  margin-right: 34px;
-  margin-left: 34px;
+  margin-right: 174px;
 
   @media screen and (min-width: 400px) and (max-width: 880px) {
     display: none;
@@ -81,10 +92,16 @@ export const Avatar = styled.div`
   @media screen and (min-width: 400px) and (max-width: 880px) {
     display: none;
   }
+
+  @media screen and (min-width: 880px) {
+  }
 `
 
 export const ButtonBookNow = styled(Button)`
   @media screen and (min-width: 400px) and (max-width: 880px) {
     display: none;
+  }
+
+  @media screen and (min-width: 880px) {
   }
 `

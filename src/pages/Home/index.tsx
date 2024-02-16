@@ -1,7 +1,7 @@
 import { Tooth } from '@phosphor-icons/react'
 import { Hero } from '../../components/Hero'
 import { ServiceCard } from '../../components/ServiceCard'
-import { HomeContainer, Services } from './styles'
+import { HomeContainer } from './styles'
 import { LipsIcon } from '../../icons/lips'
 import { ImplantIcon } from '../../icons/implant'
 import { ContactForm } from '../../components/ContactForm'
@@ -20,9 +20,9 @@ export function Home() {
   const serviceCards = [
     {
       icon: <Tooth size={42} weight="light" />,
-      title: 'Root Canal Treatment',
+      title: 'Treatment',
       description:
-        'Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.',
+        'Best treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.',
     },
     {
       icon: <LipsIcon size={42} />,

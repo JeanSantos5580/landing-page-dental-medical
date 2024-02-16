@@ -7,12 +7,9 @@ export const BannerContainer = styled.div`
   background: ${({ theme }) => theme.colors.dark_blue};
   border-radius: 10px;
 
-  @media screen and (min-width: 400px) and (max-width: 880px) {
-    flex-direction: column;
+  @media screen and (max-width: 880px) {
     padding: 24px 40px;
-  }
-
-  @media screen and (min-width: 880px) {
+    flex-direction: column;
   }
 `
 export const BannerMain = styled.div`
@@ -25,6 +22,7 @@ export const BannerMain = styled.div`
   }
 
   @media screen and (min-width: 880px) {
+    width: 100%;
   }
 `
 
@@ -38,6 +36,7 @@ export const BannerImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-width: 215px;
   border-radius: 10px;
   img {
@@ -50,6 +49,6 @@ export const BannerImage = styled.div`
   }
 
   @media screen and (min-width: 880px) {
-    margin-right: 30px;
+    margin: 0 30px;
   }
 `

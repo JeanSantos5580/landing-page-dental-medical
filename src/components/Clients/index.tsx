@@ -1,5 +1,4 @@
 import * as S from './styles'
-import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { MainTitle } from '../MainTitle'
 import { CommentCard } from '../CommentCard'
 import avatar03 from '../../assets/avatar03.png'

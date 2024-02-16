@@ -1,11 +1,27 @@
-import { Avatar, Buttons, HeaderContainer, Logo, MenuButton } from './styles'
+import { useState } from 'react'
+import { FaBars } from 'react-icons/fa'
+import { Sidebar } from '../Sidebar'
+import {
+  Avatar,
+  ButtonBookNow,
+  Buttons,
+  HeaderContainer,
+  Logo,
+  MenuButton,
+} from './styles'
+
 import logo from '../../assets/logo.png'
 import avatar from '../../assets/avatar.png'
-import { Button } from '../Button'
 
 export function Header() {
+  const [sidebar, setSideBar] = useState(false)
+
+  const handleShowSideBar = () => setSideBar(!sidebar)
+
   return (
     <HeaderContainer>
+      <FaBars onClick={handleShowSideBar} />
+      {sidebar && <Sidebar active={setSideBar} />}
       <Logo src={logo} />
       <Buttons>
         <MenuButton>Home</MenuButton>
@@ -17,7 +33,7 @@ export function Header() {
       <Avatar>
         <img src={avatar} alt="" />
       </Avatar>
-      <Button title="Book Now" />
+      <ButtonBookNow title="Book Now" />
     </HeaderContainer>
   )
 }

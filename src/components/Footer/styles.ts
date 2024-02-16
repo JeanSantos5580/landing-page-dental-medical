@@ -13,11 +13,16 @@ export const Header = styled.div`
   margin-bottom: 50px;
 `
 
-export const Icon = styled.div`
-  width: 113px;
+export const Icon = styled.img`
+  width: 133px;
+  height: 40px;
 
-  img {
-    width: 100%;
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    width: 80px;
+    height: 25px;
+  }
+
+  @media screen and (min-width: 880px) {
   }
 `
 export const Buttons = styled.div`
@@ -38,6 +43,10 @@ export const Buttons = styled.div`
 
     cursor: pointer;
   }
+
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    display: none;
+  }
 `
 export const Divider = styled.hr``
 
@@ -45,6 +54,11 @@ export const Rights = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 37px 0;
+
+  @media screen and (min-width: 400px) and (max-width: 880px) {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
 `
 export const SocialMedias = styled.div`
   display: flex;

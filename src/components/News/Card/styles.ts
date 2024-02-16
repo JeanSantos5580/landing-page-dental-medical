@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const CardContainer = styled.div`
   display: flex;
   flex-grow: 1;
+  max-width: 540px;
   flex-direction: column;
   padding: 20px;
   background: ${({ theme }) => theme.colors.light_blue};

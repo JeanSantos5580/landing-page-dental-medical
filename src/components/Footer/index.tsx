@@ -21,9 +21,7 @@ export function Footer() {
   return (
     <FooterContainer>
       <Header>
-        <Icon>
-          <img src={logo} alt="" />
-        </Icon>
+        <Icon src={logo} />
         <Buttons>
           <button>Home</button>
           <button>Service</button>

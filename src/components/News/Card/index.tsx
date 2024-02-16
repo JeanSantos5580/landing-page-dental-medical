@@ -15,7 +15,7 @@ type Props = {
   author: string
 }
 
-export function Card({ path, tag, title, description, author }: Props) {
+export function NewsCard({ path, tag, title, description, author }: Props) {
   return (
     <CardContainer>
       <img src={path} alt="" />

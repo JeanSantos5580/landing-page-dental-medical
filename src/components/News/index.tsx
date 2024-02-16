@@ -1,6 +1,6 @@
 import { Button } from '../Button'
 import { MainTitle } from '../MainTitle'
-import { Card } from './Card'
+import { NewsCard } from './Card'
 import { ContainerButton, Header, NewsContainer, ViewAllButton } from './styles'
 import news01 from '../../assets/news01.png'
 import { Carousel } from '../Carousel'
@@ -76,7 +76,7 @@ export function News() {
       </Header>
       <Carousel>
         {newsCards.map((news, key) => (
-          <Card
+          <NewsCard
             key={key}
             path={news.path}
             tag={news.tag}

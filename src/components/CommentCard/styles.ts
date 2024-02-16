@@ -6,7 +6,7 @@ export const CommentCardContainer = styled.div`
   padding: 30px;
   gap: 15px;
   background: ${({ theme }) => theme.colors.white};
-    box-shadow: 0px 8.333px 41.667px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8.333px 41.667px 0px rgba(0, 0, 0, 0.08);
 
   small {
     font-family: 'General Sans', sans-serif;

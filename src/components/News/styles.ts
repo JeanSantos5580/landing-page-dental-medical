@@ -26,6 +26,7 @@ export const ContainerButton = styled.div`
   margin-top: 30px;
 `
 export const ViewAllButton = styled(Button)`
+  margin-left: 24px;
   @media screen and (min-width: 400px) and (max-width: 880px) {
     display: none;
   }
